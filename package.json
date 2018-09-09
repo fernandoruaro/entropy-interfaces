@@ -1,0 +1,13 @@
+{
+  "name": "entropy-interfaces",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "typescript": "^3.0.3"
+  }
+}
