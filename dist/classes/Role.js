@@ -31,4 +31,4 @@ exports.RoleAction = RoleAction;
 var RoleActionType;
 (function (RoleActionType) {
     RoleActionType["ManageWorkspaceMembers"] = "manageWorkspaceMembers";
-})(RoleActionType || (RoleActionType = {}));
+})(RoleActionType = exports.RoleActionType || (exports.RoleActionType = {}));

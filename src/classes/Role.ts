@@ -11,6 +11,6 @@ export class RoleAction {
   type: RoleActionType
 }
 
-enum RoleActionType {
+export enum RoleActionType {
   ManageWorkspaceMembers = "manageWorkspaceMembers"
 }

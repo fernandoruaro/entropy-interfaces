@@ -8,7 +8,6 @@ export declare class Role extends Deletable {
 export declare class RoleAction {
     type: RoleActionType;
 }
-declare enum RoleActionType {
+export declare enum RoleActionType {
     ManageWorkspaceMembers = "manageWorkspaceMembers"
 }
-export {};
