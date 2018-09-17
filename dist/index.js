@@ -9,4 +9,5 @@ __export(require("./classes/Entity"));
 __export(require("./classes/Dashboard"));
 __export(require("./classes/EntityData"));
 __export(require("./classes/WorkspaceMember"));
+__export(require("./classes/Workspace"));
 __export(require("./classes/Role"));
