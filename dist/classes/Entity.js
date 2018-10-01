@@ -36,6 +36,7 @@ var TextMask;
     TextMask["CPF"] = "cpf";
     TextMask["CNPJ"] = "cnpj";
     TextMask["Free"] = "free";
+    TextMask["Multiline"] = "multiline";
 })(TextMask || (TextMask = {}));
 var EntityPropertyType;
 (function (EntityPropertyType) {
@@ -52,6 +53,12 @@ var Entity = /** @class */ (function (_super) {
     return Entity;
 }(Deletable_1.Deletable));
 exports.Entity = Entity;
+var EntityPropertyDisplay = /** @class */ (function () {
+    function EntityPropertyDisplay() {
+    }
+    return EntityPropertyDisplay;
+}());
+exports.EntityPropertyDisplay = EntityPropertyDisplay;
 var EntityProperty = /** @class */ (function () {
     function EntityProperty() {
     }

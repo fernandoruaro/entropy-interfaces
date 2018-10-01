@@ -16,7 +16,8 @@ declare enum TextMask {
     Phone = "phone",
     CPF = "cpf",
     CNPJ = "cnpj",
-    Free = "free"
+    Free = "free",
+    Multiline = "multiline"
 }
 declare enum EntityPropertyType {
     Text = "text",
@@ -30,6 +31,10 @@ export declare class Entity extends Deletable {
     workspaceId: string;
     properties: Array<EntityProperty>;
 }
+export declare class EntityPropertyDisplay {
+    tableColumn: boolean;
+    width: number;
+}
 export declare class EntityProperty {
     id?: string;
     displayName: string;
@@ -42,5 +47,6 @@ export declare class EntityProperty {
     multipleChoicesEntityId?: string;
     multipleChoicesEntityPropertyId?: string;
     textMask?: TextMask;
+    display?: EntityPropertyDisplay;
 }
 export {};

@@ -20,7 +20,8 @@ enum TextMask {
   Phone = "phone",
   CPF = "cpf",
   CNPJ = "cnpj",
-  Free = "free"
+  Free = "free",
+  Multiline = "multiline"
 }
 
 enum EntityPropertyType {
@@ -37,6 +38,11 @@ export class Entity extends Deletable {
   properties: Array<EntityProperty>
 }
 
+export class EntityPropertyDisplay {
+  tableColumn: boolean
+  width: number //1-12 - 4=33,33%, 6=50%
+}
+
 export class EntityProperty {
   id?: string
   displayName: string
@@ -49,6 +55,7 @@ export class EntityProperty {
   multipleChoicesEntityId?: string
   multipleChoicesEntityPropertyId?: string
   textMask?: TextMask
+  display?: EntityPropertyDisplay
 }
 
 
