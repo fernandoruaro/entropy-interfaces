@@ -1,4 +1,4 @@
-export class Trail {
+export interface Trail {
   workspaceId: string
   at: number
   name: string

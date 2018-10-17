@@ -1,5 +1,5 @@
 import { Trail } from './Trail';
-export abstract class Deletable {
+export interface Deletable {
   deleted?: boolean
   trail?: Trail
 }

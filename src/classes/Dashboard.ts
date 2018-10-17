@@ -1,13 +1,13 @@
 import { Deletable } from './Deletable';
 
-export class Dashboard extends Deletable {
+export interface Dashboard extends Deletable {
   id?: string
   workspaceId: string
   properties: Array<DashboardProperty>
   widgets: Array<DashboardWidget>
 }
 
-export class DashboardProperty {
+export interface DashboardProperty {
   id?: string
   type: string
   displayName: string
@@ -15,13 +15,13 @@ export class DashboardProperty {
   propertyId?: string
 }
 
-export class DashboardWidgetAggregation {
+export interface DashboardWidgetAggregation {
   id?: string
   displayName: string
   function: string
 }
 
-export class DashboardWidget {
+export interface DashboardWidget {
   id?: string
   title: string
   type: string

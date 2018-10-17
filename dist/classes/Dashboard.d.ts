@@ -1,23 +1,23 @@
 import { Deletable } from './Deletable';
-export declare class Dashboard extends Deletable {
+export interface Dashboard extends Deletable {
     id?: string;
     workspaceId: string;
     properties: Array<DashboardProperty>;
     widgets: Array<DashboardWidget>;
 }
-export declare class DashboardProperty {
+export interface DashboardProperty {
     id?: string;
     type: string;
     displayName: string;
     function?: string;
     propertyId?: string;
 }
-export declare class DashboardWidgetAggregation {
+export interface DashboardWidgetAggregation {
     id?: string;
     displayName: string;
     function: string;
 }
-export declare class DashboardWidget {
+export interface DashboardWidget {
     id?: string;
     title: string;
     type: string;
