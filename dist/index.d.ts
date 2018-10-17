@@ -6,3 +6,4 @@ export * from './classes/EntityData';
 export * from './classes/WorkspaceMember';
 export * from './classes/Workspace';
 export * from './classes/Role';
+export * from './classes/User';
