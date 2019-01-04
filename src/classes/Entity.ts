@@ -44,6 +44,7 @@ export interface EntityPropertyDisplay {
 
 export interface EntityProperty {
   id?: string
+  integrationId?: string
   displayName: string
   required: boolean
   type: EntityPropertyType
