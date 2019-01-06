@@ -4,6 +4,8 @@ export interface Dashboard extends Deletable {
     workspaceId: string;
     properties: Array<DashboardProperty>;
     widgets: Array<DashboardWidget>;
+    title: string;
+    entityId: string;
 }
 export interface DashboardProperty {
     id?: string;
