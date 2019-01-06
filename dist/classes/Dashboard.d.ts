@@ -28,3 +28,6 @@ export interface DashboardWidget {
     groupByProperties: Array<string>;
     aggregations: Array<DashboardWidgetAggregation>;
 }
+export interface DashboardFilter {
+    [propertyId: string]: Array<string>;
+}
