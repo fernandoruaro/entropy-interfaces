@@ -15,6 +15,8 @@ export interface DashboardProperty {
   displayName: string
   function?: string
   propertyId?: string
+  filter?: boolean
+  column?: boolean
 }
 
 export interface DashboardWidgetAggregation {
