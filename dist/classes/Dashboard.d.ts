@@ -31,5 +31,26 @@ export interface DashboardWidget {
     aggregations: Array<DashboardWidgetAggregation>;
 }
 export interface DashboardFilter {
+    dataTables?: DataTablesOptions;
+    filter: DashboardFilterFilter;
+}
+export interface DashboardFilterFilter {
     [propertyId: string]: Array<string>;
+}
+export interface DataTablesColumnOptions {
+    data: string;
+}
+export interface DataTablesOrderOptions {
+    column: number;
+    dir: string;
+}
+export interface DataTablesSearchOptions {
+    value: string;
+}
+export interface DataTablesOptions {
+    columns: Array<DataTablesColumnOptions>;
+    length: number;
+    order: Array<DataTablesOrderOptions>;
+    search: DataTablesSearchOptions;
+    start: number;
 }
