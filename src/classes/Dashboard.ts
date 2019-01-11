@@ -59,8 +59,16 @@ export interface DataTablesSearchOptions {
 
 export interface DataTablesOptions{
   columns: Array<DataTablesColumnOptions>
+  draw: number
   length: number
   order: Array<DataTablesOrderOptions>
   search: DataTablesSearchOptions
   start: number
+}
+
+export interface DataTablesResponse {
+  draw: number
+  data: Array<any>
+  recordsTotal: number
+  recordsFiltered: number
 }
