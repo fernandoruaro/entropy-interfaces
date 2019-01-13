@@ -35,12 +35,25 @@ export interface DashboardWidget {
   aggregations: Array<DashboardWidgetAggregation>
 }
 
+export interface FinalOperation<T> {
+  [propertyId: string] : T
+}
+
+export interface Operation {
+  AND?: Array<Operation>
+  OR?: Array<Operation>
+  NOT?: Operation
+  IN?: FinalOperation<Array<string>>
+  LT?: FinalOperation<number>
+  LTE?: FinalOperation<number>
+  GT?: FinalOperation<number>
+  GTE?: FinalOperation<number>
+  EQ?: FinalOperation<Array<string>>
+}
+
 export interface DashboardFilter {
   dataTables?: DataTablesOptions,
-  filter: DashboardFilterFilter
-}
-export interface DashboardFilterFilter {
-  [propertyId: string]: Array<string>
+  filter: Operation
 }
 
 export interface DataTablesColumnOptions {
@@ -57,7 +70,7 @@ export interface DataTablesSearchOptions {
   value: string
 }
 
-export interface DataTablesOptions{
+export interface DataTablesOptions {
   columns: Array<DataTablesColumnOptions>
   draw: number
   length: number
