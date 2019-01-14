@@ -48,7 +48,8 @@ export interface Operation {
   LTE?: FinalOperation<number>
   GT?: FinalOperation<number>
   GTE?: FinalOperation<number>
-  EQ?: FinalOperation<Array<string>>
+  LIKE?: FinalOperation<String>
+  EQ?: FinalOperation<string>
 }
 
 export interface DashboardFilter {
