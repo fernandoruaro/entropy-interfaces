@@ -1,4 +1,6 @@
 import { Deletable } from './Deletable';
+import { Operation } from './Operation';
+import { DataTablesOptions } from './DataTablesOptions';
 export interface Dashboard extends Deletable {
     id?: string;
     workspaceId: string;
@@ -30,46 +32,7 @@ export interface DashboardWidget {
     groupByProperties: Array<string>;
     aggregations: Array<DashboardWidgetAggregation>;
 }
-export interface FinalOperation<T> {
-    [propertyId: string]: T;
-}
-export interface Operation {
-    AND?: Array<Operation>;
-    OR?: Array<Operation>;
-    NOT?: Operation;
-    IN?: FinalOperation<Array<string>>;
-    LT?: FinalOperation<number>;
-    LTE?: FinalOperation<number>;
-    GT?: FinalOperation<number>;
-    GTE?: FinalOperation<number>;
-    LIKE?: FinalOperation<String>;
-    EQ?: FinalOperation<string>;
-}
 export interface DashboardFilter {
     dataTables?: DataTablesOptions;
     filter: Operation;
-}
-export interface DataTablesColumnOptions {
-    data: string;
-}
-export interface DataTablesOrderOptions {
-    column: number;
-    dir: string;
-}
-export interface DataTablesSearchOptions {
-    value: string;
-}
-export interface DataTablesOptions {
-    columns: Array<DataTablesColumnOptions>;
-    draw: number;
-    length: number;
-    order: Array<DataTablesOrderOptions>;
-    search: DataTablesSearchOptions;
-    start: number;
-}
-export interface DataTablesResponse {
-    draw: number;
-    data: Array<any>;
-    recordsTotal: number;
-    recordsFiltered: number;
 }

@@ -8,4 +8,7 @@ export * from './classes/Workspace';
 export * from './classes/Role';
 export * from './classes/User';
 export * from './classes/ListResult';
+export * from './classes/Operation';
+export * from './classes/DataTablesOptions';
 export * from './api/IEntityService';
+export * from './api/IEntityDataService';
