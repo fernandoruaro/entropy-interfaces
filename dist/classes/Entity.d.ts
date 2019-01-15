@@ -26,6 +26,7 @@ declare enum EntityPropertyType {
 }
 export interface Entity extends Deletable {
     id?: string;
+    integrationId?: string;
     displayName: string;
     workspaceId: string;
     properties: Array<EntityProperty>;
