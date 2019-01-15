@@ -8,3 +8,4 @@ export * from './classes/Workspace';
 export * from './classes/Role';
 export * from './classes/User';
 export * from './classes/ListResult';
+export * from './api/IEntityService';
