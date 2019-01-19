@@ -1,5 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var RoleActionResource;
+(function (RoleActionResource) {
+    RoleActionResource["Wildcard"] = "*";
+})(RoleActionResource = exports.RoleActionResource || (exports.RoleActionResource = {}));
 var RoleActionType;
 (function (RoleActionType) {
     RoleActionType["Admin"] = "admin";

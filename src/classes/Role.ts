@@ -9,7 +9,11 @@ export interface Role extends Deletable {
 
 export interface RoleAction {
   type: RoleActionType
-  resourceId?: string
+  resourceId?: string | RoleActionResource
+}
+
+export enum RoleActionResource {
+  Wildcard = "*"
 }
 
 export enum RoleActionType {

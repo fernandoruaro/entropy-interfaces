@@ -7,7 +7,10 @@ export interface Role extends Deletable {
 }
 export interface RoleAction {
     type: RoleActionType;
-    resourceId?: string;
+    resourceId?: string | RoleActionResource;
+}
+export declare enum RoleActionResource {
+    Wildcard = "*"
 }
 export declare enum RoleActionType {
     Admin = "admin",
