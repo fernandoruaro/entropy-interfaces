@@ -13,8 +13,8 @@ export declare enum RoleActionType {
     ManageWorkspace = "manageWorkspace",
     ManageWorkspaceMembers = "manageWorkspaceMembers",
     ManageEntities = "manageEntities",
-    ReadEntity = "readEntity",
-    WriteEntity = "writeEntity",
+    ReadEntityData = "readEntityData",
+    WriteEntityData = "writeEntityData",
     ManageDashboards = "manageDashboards",
     AccessDashboard = "accessDashboard",
     AccessPlugin = "accessPlugin"
