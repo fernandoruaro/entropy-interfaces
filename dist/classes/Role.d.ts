@@ -7,7 +7,15 @@ export interface Role extends Deletable {
 }
 export interface RoleAction {
     type: RoleActionType;
+    resourceId?: string;
 }
 export declare enum RoleActionType {
-    ManageWorkspaceMembers = "manageWorkspaceMembers"
+    ManageWorkspace = "manageWorkspace",
+    ManageWorkspaceMembers = "manageWorkspaceMembers",
+    ManageEntities = "manageEntities",
+    ReadEntity = "readEntity",
+    WriteEntity = "writeEntity",
+    ManageDashboards = "manageDashboards",
+    AccessDashboard = "accessDashboard",
+    AccessPlugin = "accessPlugin"
 }
