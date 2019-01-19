@@ -13,6 +13,7 @@ export interface RoleAction {
 }
 
 export enum RoleActionType {
+  Admin = "admin",
   ManageWorkspace = "manageWorkspace",
   ManageWorkspaceMembers = "manageWorkspaceMembers",
   ManageEntities = "manageEntities",

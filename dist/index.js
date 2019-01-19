@@ -8,3 +8,4 @@ __export(require("./api/IEntityService"));
 __export(require("./api/IEntityDataService"));
 __export(require("./api/IPluginService"));
 __export(require("./api/IWorkspaceService"));
+__export(require("./api/IRoleService"));

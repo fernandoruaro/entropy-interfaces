@@ -15,3 +15,4 @@ export * from './api/IEntityService';
 export * from './api/IEntityDataService';
 export * from './api/IPluginService';
 export * from './api/IWorkspaceService';
+export * from './api/IRoleService';

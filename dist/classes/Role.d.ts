@@ -10,6 +10,7 @@ export interface RoleAction {
     resourceId?: string;
 }
 export declare enum RoleActionType {
+    Admin = "admin",
     ManageWorkspace = "manageWorkspace",
     ManageWorkspaceMembers = "manageWorkspaceMembers",
     ManageEntities = "manageEntities",

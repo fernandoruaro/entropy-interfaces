@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var RoleActionType;
 (function (RoleActionType) {
+    RoleActionType["Admin"] = "admin";
     RoleActionType["ManageWorkspace"] = "manageWorkspace";
     RoleActionType["ManageWorkspaceMembers"] = "manageWorkspaceMembers";
     RoleActionType["ManageEntities"] = "manageEntities";
