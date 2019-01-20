@@ -1,24 +1,24 @@
 import { Deletable } from './Deletable';
-declare enum DateFormat {
+export declare enum DateFormat {
     Date = "date",
     DateTime = "dateTime"
 }
-declare enum NumberFormat {
+export declare enum NumberFormat {
     Currency = "currency",
     Integer = "integer",
     Decimal = "decimal"
 }
-declare enum MultipleChoicesFrom {
+export declare enum MultipleChoicesFrom {
     Options = "options",
     Entity = "entity"
 }
-declare enum TextMask {
+export declare enum TextMask {
     Phone = "phone",
     CPF = "cpf",
     CNPJ = "cnpj",
     Free = "free"
 }
-declare enum EntityPropertyType {
+export declare enum EntityPropertyType {
     Text = "text",
     Number = "number",
     MultipleChoices = "multipleChoices",
@@ -50,4 +50,3 @@ export interface EntityProperty {
     textMask?: TextMask;
     display?: EntityPropertyDisplay;
 }
-export {};

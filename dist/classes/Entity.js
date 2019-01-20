@@ -4,29 +4,29 @@ var DateFormat;
 (function (DateFormat) {
     DateFormat["Date"] = "date";
     DateFormat["DateTime"] = "dateTime";
-})(DateFormat || (DateFormat = {}));
+})(DateFormat = exports.DateFormat || (exports.DateFormat = {}));
 var NumberFormat;
 (function (NumberFormat) {
     NumberFormat["Currency"] = "currency";
     NumberFormat["Integer"] = "integer";
     NumberFormat["Decimal"] = "decimal";
-})(NumberFormat || (NumberFormat = {}));
+})(NumberFormat = exports.NumberFormat || (exports.NumberFormat = {}));
 var MultipleChoicesFrom;
 (function (MultipleChoicesFrom) {
     MultipleChoicesFrom["Options"] = "options";
     MultipleChoicesFrom["Entity"] = "entity";
-})(MultipleChoicesFrom || (MultipleChoicesFrom = {}));
+})(MultipleChoicesFrom = exports.MultipleChoicesFrom || (exports.MultipleChoicesFrom = {}));
 var TextMask;
 (function (TextMask) {
     TextMask["Phone"] = "phone";
     TextMask["CPF"] = "cpf";
     TextMask["CNPJ"] = "cnpj";
     TextMask["Free"] = "free";
-})(TextMask || (TextMask = {}));
+})(TextMask = exports.TextMask || (exports.TextMask = {}));
 var EntityPropertyType;
 (function (EntityPropertyType) {
     EntityPropertyType["Text"] = "text";
     EntityPropertyType["Number"] = "number";
     EntityPropertyType["MultipleChoices"] = "multipleChoices";
     EntityPropertyType["DateTime"] = "dateTime";
-})(EntityPropertyType || (EntityPropertyType = {}));
+})(EntityPropertyType = exports.EntityPropertyType || (exports.EntityPropertyType = {}));

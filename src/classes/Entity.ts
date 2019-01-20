@@ -1,29 +1,29 @@
 import { Deletable } from './Deletable';
 
-enum DateFormat {
+export enum DateFormat {
   Date = "date",
   DateTime = "dateTime"
 }
 
-enum NumberFormat {
+export enum NumberFormat {
   Currency = "currency",
   Integer = "integer",
   Decimal = "decimal"
 }
 
-enum MultipleChoicesFrom {
+export enum MultipleChoicesFrom {
   Options = "options",
   Entity = "entity"
 }
 
-enum TextMask {
+export enum TextMask {
   Phone = "phone",
   CPF = "cpf",
   CNPJ = "cnpj",
   Free = "free"
 }
 
-enum EntityPropertyType {
+export enum EntityPropertyType {
   Text = "text",
   Number = "number",
   MultipleChoices = "multipleChoices",
