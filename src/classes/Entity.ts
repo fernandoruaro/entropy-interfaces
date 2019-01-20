@@ -34,7 +34,7 @@ export interface Entity extends Deletable {
   id?: string
   integrationId?: string
   displayName: string
-  workspaceId: string
+  workspaceId?: string
   properties: Array<EntityProperty>
 }
 
