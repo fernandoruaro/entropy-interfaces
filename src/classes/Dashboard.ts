@@ -11,9 +11,14 @@ export interface Dashboard extends Deletable {
   entityId: string
 }
 
+export enum DashboardPropertyType {
+  FUNCTION = 'function',
+  PROPERTY = 'property'
+}
+
 export interface DashboardProperty {
   id?: string
-  type: string
+  type: DashboardPropertyType
   displayName: string
   function?: string
   propertyId?: string
@@ -27,12 +32,24 @@ export interface DashboardWidgetAggregation {
   function: string
 }
 
+export enum DashboardWidgetType {
+  BAR = 'bar',
+  LINE = 'line',
+  TABLE = 'table',
+  PIVOT_TABLE = 'pivot_table'
+}
+
+export enum DashboardWidgetOrder {
+  ASC = 'asc',
+  DESC = 'desc'
+}
+
 export interface DashboardWidget {
   id?: string
   title: string
-  type: string
+  type: DashboardWidgetType
   maxItems: number
-  order: string
+  order: DashboardWidgetOrder
   groupByProperties: Array<string>
   aggregations: Array<DashboardWidgetAggregation>
 }
