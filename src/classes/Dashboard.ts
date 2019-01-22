@@ -4,7 +4,7 @@ import { DataTablesOptions } from './DataTablesOptions';
 
 export interface Dashboard extends Deletable {
   id?: string
-  workspaceId: string
+  workspaceId?: string
   properties: Array<DashboardProperty>
   widgets: Array<DashboardWidget>
   title: string
