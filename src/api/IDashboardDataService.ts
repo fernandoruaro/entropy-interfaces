@@ -10,5 +10,6 @@ export interface DashboardDataLoadRequest {
     dashboard: Dashboard,
     widgetId: string,
     dataTables?: DataTablesOptions,
-    filter: Operation
+    filter: Operation,
+    requestId?: string
 }
