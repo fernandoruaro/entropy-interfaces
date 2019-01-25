@@ -26,7 +26,7 @@ export enum MenuItemType {
 
 export interface MenuItem {
   item?: Array<MenuItem>
-  type?: MenuItemType
+  type: MenuItemType
   resourceId?: string
   name: string
 }
