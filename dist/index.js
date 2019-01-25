@@ -5,6 +5,7 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./classes/Entity"));
 __export(require("./classes/Dashboard"));
+__export(require("./classes/Workspace"));
 __export(require("./classes/Role"));
 __export(require("./api/IDashboardService"));
 __export(require("./api/IDashboardFilterService"));
