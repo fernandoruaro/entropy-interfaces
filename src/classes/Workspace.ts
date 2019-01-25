@@ -4,7 +4,7 @@ export interface WorkspaceLayout {
   mainColor?: string
   lightLogoUrl?: string
   darkLogoUrl?: string
-  menus?: Array<MenuItem>
+  menus?: Array<RootMenuItem>
 }
 
 export interface Workspace extends Deletable {
@@ -23,9 +23,13 @@ export enum MenuItemType {
   USERS = "users"
 }
 
+
 export interface MenuItem {
   item?: Array<MenuItem>
   type?: MenuItemType
   resourceId?: string
   name: string
+}
+export interface RootMenuItem extends MenuItem {
+  icon: string
 }
