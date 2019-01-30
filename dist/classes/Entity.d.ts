@@ -21,7 +21,7 @@ export declare enum TextMask {
 export declare enum EntityPropertyType {
     Text = "text",
     Number = "number",
-    MultipleChoices = "multipleChoices",
+    Choices = "choices",
     DateTime = "dateTime"
 }
 export interface Entity extends Deletable {
@@ -43,10 +43,10 @@ export interface EntityProperty {
     type: EntityPropertyType;
     dateFormat?: DateFormat;
     numberFormat?: NumberFormat;
-    multipleChoicesFrom?: MultipleChoicesFrom;
-    multipleChoicesOptions?: Array<string>;
-    multipleChoicesEntityId?: string;
-    multipleChoicesEntityPropertyId?: string;
+    choicesFrom?: MultipleChoicesFrom;
+    choicesOptions?: Array<string>;
+    choicesEntityId?: string;
+    choicesEntityPropertyId?: string;
     textMask?: TextMask;
     display?: EntityPropertyDisplay;
 }

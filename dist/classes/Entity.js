@@ -27,6 +27,6 @@ var EntityPropertyType;
 (function (EntityPropertyType) {
     EntityPropertyType["Text"] = "text";
     EntityPropertyType["Number"] = "number";
-    EntityPropertyType["MultipleChoices"] = "multipleChoices";
+    EntityPropertyType["Choices"] = "choices";
     EntityPropertyType["DateTime"] = "dateTime";
 })(EntityPropertyType = exports.EntityPropertyType || (exports.EntityPropertyType = {}));
