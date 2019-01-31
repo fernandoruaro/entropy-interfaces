@@ -1,12 +1,4 @@
-# Funções
-- COL
-- ANO
-- MÊS
-- DIA
-- SE
-- E
-- OU
-- CONCATENAR
+## Funções disponíveis para relatórios
 
 
 ### CONT.NÚM
