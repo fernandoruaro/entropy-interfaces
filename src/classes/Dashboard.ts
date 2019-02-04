@@ -44,11 +44,13 @@ export enum DashboardWidgetOrder {
   DESC = 'desc'
 }
 
+
 export interface DashboardWidget {
   id?: string
   title: string
   type: DashboardWidgetType
   maxItems: number
+  orderBy?: string,
   order: DashboardWidgetOrder
   groupByProperties: Array<string>
   aggregations: Array<DashboardWidgetAggregation>
