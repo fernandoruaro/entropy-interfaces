@@ -50,7 +50,7 @@ export interface DashboardWidget {
   title: string
   type: DashboardWidgetType
   maxItems: number
-  orderBy?: string,
+  orderBy?: string
   order: DashboardWidgetOrder
   groupByProperties: Array<string>
   aggregations: Array<DashboardWidgetAggregation>
