@@ -4,6 +4,7 @@ export * from './classes/Entity';
 export * from './classes/Dashboard';
 export * from './classes/EntityData';
 export * from './classes/WorkspaceMember';
+export * from './classes/ExportData';
 export * from './classes/Workspace';
 export * from './classes/Role';
 export * from './classes/Plugin';
