@@ -2,6 +2,7 @@ import { Deletable } from './Deletable';
 export declare enum ExportDataStatus {
     INIT = "INIT",
     PROCESSING = "PROCESSING",
+    EXPORTING = "EXPORTING",
     FAILED = "FAILED",
     READY = "READY"
 }

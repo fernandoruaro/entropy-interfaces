@@ -3,6 +3,7 @@ import { Deletable } from './Deletable';
 export enum ExportDataStatus {
     INIT = "INIT",
     PROCESSING = "PROCESSING",
+    EXPORTING = "EXPORTING",
     FAILED = "FAILED",
     READY = "READY"
 }
