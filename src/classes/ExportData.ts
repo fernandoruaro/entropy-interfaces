@@ -12,6 +12,7 @@ export interface ExportData extends Deletable {
     entityId: string
     workspaceId?: string
     path?: string
+    url?: string
     status?: ExportDataStatus
     failure?: string
     batchSize?: number
