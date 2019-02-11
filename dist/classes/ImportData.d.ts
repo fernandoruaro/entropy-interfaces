@@ -1,5 +1,6 @@
 import { Deletable } from './Deletable';
 export declare enum ImportDataStatus {
+    PENDING_UPLOAD = "PENDING_UPLOAD",
     VALIDATING = "VALIDATING",
     IMPORTING = "IMPORTING",
     FAILED = "FAILED",
