@@ -1,4 +1,5 @@
 import { Deletable } from './Deletable';
+import { EntityProperty } from './Entity';
 
 export enum ImportDataStatus {
     PENDING_UPLOAD = "PENDING_UPLOAD",
@@ -17,4 +18,5 @@ export interface ImportData extends Deletable {
     failure?: string
     batchSize?: number
     currentRow?: number
+    columns?: Array<EntityProperty>
 }
