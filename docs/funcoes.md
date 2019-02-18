@@ -105,3 +105,29 @@ PROCV("USD"; 'Moedas'.'Código'; 'Moedas'.'Cotação')
 PROCV('Moeda'; 'Moedas'.'Código'; 'Moedas'.'Cotação')
 ```
 
+### HOJE
+
+Retorna o dia de hoje.
+
+**Exemplo:**
+
+``` swift
+HOJE()
+```
+
+### DATADIF
+
+Retorna a diferença entre duas datas. A diferença pode ser representada em dias ("D"), meses ("M") ou anos ("A").
+
+**Exemplo:**
+
+``` swift
+//Calcula a diferença em dias entre a data de hoje e a propriedade 'Data'.
+DATADIF('Data'; HOJE(); "D")
+
+//Calcula a diferença em meses entre a data de hoje e a propriedade 'Data'.
+DATADIF('Data'; HOJE(); "M")
+
+//Calcula a diferença em anos entre a data de hoje e a propriedade 'Data'.
+DATADIF('Data'; HOJE(); "A")
+```
