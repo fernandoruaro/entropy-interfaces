@@ -1,4 +1,5 @@
 import { RoleAction } from "./Role";
+import { Workspace } from "./Workspace";
 
 export interface User {
   email: string
@@ -11,5 +12,6 @@ export interface User {
 }
 
 export interface Me extends User {
-  allowedActions: Array<RoleAction>
+  allowedActions?: Array<RoleAction>
+  workspaces?: Array<Workspace>
 }
